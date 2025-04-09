@@ -1,75 +1,197 @@
+/********* Estilos para index.html *********/
 body{
-    margin: 0px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Tamanho total da tela do pc*/
 }
+
 
 header {
-    background-color: rgb(0,22, 13);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
-  }
-
-  #logo {
-    height: 150px;
-  }
-
-  #img-topo {
-    width: 100%;
-    height: 300px;
-    min-height: 300px;
-    background-image: url(../img/imagem-topo.png);
-    background-size: cover;
-  }
-
-  nav {
-    background-color: #1b4332;
-    padding: 2px 0px 5px 0px;
-    text-align: center;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  nav a:hover {
-    color: yellow;
-    font-weight: bold;
-  }
-
-  #container {
-    padding: 50px 100px;
-    text-align: center;
-  }
-
-h1 {
-    color: #22577a;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+  background-color: #00160D;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
-#destaque {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
+
+#logo{
+  height: 150px;
+}
+
+
+#img-topo{
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  background-image: url("../img/imagem-topo.png");
+  background-size: cover;
+}
+
+
+nav{
+  background-color: #1b4332;
+  padding: 2px 0px 5px 0px;
+  text-align: center;
+}
+
+
+nav a{
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+nav a:hover{
+  color: rgb(170, 255, 0);
+  font-weight: bold;
+}
+
+
+#container{
+  padding: 50px 100px;
+  text-align: center;
+}
+
+
+h1{
+  color: #06584ec3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+#destaque{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
 }
 
 #destaque a {
-    text-decoration: none;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
+#destaque a:hover{
+  opacity: 1.0;
+}
 footer{
-    background-color:#081c15 ;
-    color: white;   
-    text-align: center;
-    font-weight: lighter;
-    padding: 10px 0px;
-    margin-top: auto;
-  }
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  padding: 10px 0px;
+  margin-top: auto;
+}
+/************* Estilos para sobre.html *************/
+
+#conteudo-empresa{
+  display: flex;
+}
+
+#conteudo-empresa-esquerda{
+  width: 50%;
+}
+
+#conteudo-empresa-direita{
+ 
+  width: 50%;
+}
+#conteudo-empresa-direita p {
+  padding-left: 30px;
+  text-align: justify;
+}
+
+#img-empresa{
+  width: 100%;
+}
+
+#selo-melhores-empresas{
+  height: 25%;
+  margin-top: 35px;
+}
+
+/***************Estilos para solucoes.html*************/
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #22577a;
+  font-size: 28px;
+}
+
+.destques-produtos {
+  padding: 0px 15px;
+}
+
+.destaques-produtos a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.destaques-produtos a:hover {
+  font-weight: bold;
+}
+
+/******************Estilos para casos.hmtl********************/
+
+.detalhes-caso {
+  display: flex;
+  margin: 30px 0px;
+}
+
+.detalhes-caso img {
+  padding-right: 30px;
+}
+
+.detalhes-caso-texto {
+  text-align: start;
+}
+
+/******************Estilos para contato.hmtl********************/
+
+#frm-container{
+  display: flex;
+}
+
+#frm-labels {
+  width: 50%;
+  text-align: right;
+  padding-right: 15px;
+}
+
+#frm-fields {
+  width: 50%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+#frm-mensagem {
+  resize: none;
+}
+
+#frm-container select, input, textarea{
+  width: 380px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+
+#btn-enviar{
+  background-color: rgba(4, 105, 9, 0.832);
+  color: white;
+}
+
+#btn-apagar{
+  background-color: #c4c4c4;
+}
+
+button{
+  width: 140px;
+  height: 30px;
+  font-size: 15px;
+  margin: 0px 15px;
+  border: 0px;
+}
